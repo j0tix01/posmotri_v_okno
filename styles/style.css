@@ -60,3 +60,13 @@ ol {
   height: 298px;
   overflow-y: auto;
 }
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  height: 100%;
+}
+
+
