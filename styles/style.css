@@ -102,6 +102,10 @@ ol {
   text-decoration: underline;
 }
 
+.content__list-item:active {
+  background-color: #545050;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -205,4 +209,8 @@ ol {
 .button:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.button:active {
+  background: #545050;
 }
