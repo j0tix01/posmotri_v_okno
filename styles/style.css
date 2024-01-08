@@ -31,6 +31,7 @@ ol,
 li,
 blockquote,
 fieldset {
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -156,3 +157,20 @@ ol {
   line-height: 16.20px;
   word-wrap: break-word;
 }
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label:hover
+  .search-form__pseudo-checkbox
+  ~ .search-form__label-text {
+  text-decoration: underline;
+}
+
