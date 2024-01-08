@@ -12,6 +12,7 @@ html {
   display: flex;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -272,3 +273,7 @@ button:focus-visible {
   margin-left: 5px;
   cursor: pointer;
 }
+
+.content__list::-webkit-scrollbar {
+  display: none;
+ }
