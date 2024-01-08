@@ -263,3 +263,7 @@ button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 3px;
 }
+
+.content__card-link_current {
+  background-color: #545050;
+}
