@@ -267,3 +267,8 @@ button:focus-visible {
 .content__card-link_current {
   background-color: #545050;
 }
+
+.search-form__label-text {
+  margin-left: 5px;
+  cursor: pointer;
+}
