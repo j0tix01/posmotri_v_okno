@@ -277,3 +277,16 @@ button:focus-visible {
 .content__list::-webkit-scrollbar {
   display: none;
  }
+
+ input[type="checkbox"] + span {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span {
+  outline: 1px solid black;
+  outline-offset: -2px;
+  background-color: #fff;
+}
