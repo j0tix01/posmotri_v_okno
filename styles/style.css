@@ -97,6 +97,11 @@ ol {
   margin-bottom: 30px;
 }
 
+.content__list-item:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -195,4 +200,9 @@ ol {
 
 .more-button {
   width: 399px;
+}
+
+.button:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
