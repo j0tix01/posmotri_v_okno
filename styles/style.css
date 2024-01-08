@@ -54,3 +54,9 @@ ol {
   align-items: flex-start;
 }
 
+.content__list {
+  position: relative;
+  width: 399px;
+  height: 298px;
+  overflow-y: auto;
+}
