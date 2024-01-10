@@ -89,7 +89,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: white;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   word-wrap: break-word;
@@ -116,17 +116,20 @@ ol {
   cursor: pointer;
 }
 
-input[type="checkbox"] + span {
+.search-form__pseudo-checkbox {
+  display: block;
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
-  cursor: pointer;
+  border: 1px solid #FFF;
 }
 
-input[type="checkbox"]:checked + span {
-  outline: 1px solid black;
-  outline-offset: -2px;
-  background-color: #fff;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  background-color: #FFF;
 }
 
 .search-form__textfield {
@@ -168,18 +171,21 @@ input[type="checkbox"]:checked + span {
   cursor: pointer;
 }
 
-.button:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
 .button:active {
   background: #545050;
 }
 
-button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
@@ -197,10 +203,10 @@ button:focus-visible {
 
 .title {
   color: white;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 70.50px;
+  line-height: 94%;
   text-transform: uppercase;
   word-wrap: break-word;
 }
@@ -214,15 +220,6 @@ button:focus-visible {
   width: 399px;
   height: 298px;
   overflow-y: auto;
-}
-
-.content__list:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
-}
-
-.content__list::-webkit-scrollbar {
- display: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -252,7 +249,6 @@ button:focus-visible {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 3px;
 }
 
 .content__video-card {
@@ -260,25 +256,26 @@ button:focus-visible {
   justify-content: space-between;
 }
 
-.content__video-card:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
+.content__video-card-description-container {
+  flex-grow: 1;
+  width: 100%;
 }
 
 .content__video-card-title {
   color: white;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   word-wrap: break-word;
+  hyphens: auto;
 }
 
 .content__video-card-description {
   margin-top: 6px;
   color: white;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.20px;
@@ -287,9 +284,13 @@ button:focus-visible {
 
 .content__video-card-thumbnail {
   width: 194px;
+  width: 100%;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
   width: 399px;
+  width: 100%;
 }
